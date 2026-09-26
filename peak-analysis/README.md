@@ -252,3 +252,27 @@ Caveats: rates are events per 1,000 (one student can account for several); PEAK'
 (~9 per 1,000 per event on its Black enrollment), so treat single-year PEAK rates as counts — the
 four-year run of zeros is the robust fact; several small BCS elementary cells are suppressed;
 2020-21 pandemic year excluded from comparisons.
+
+## Official subgroup grades and the locked zone (rcd_acc_spg2)
+
+Source: SRC dataset `rcd_acc_spg2` (SY2425) — the state's official per-subgroup School Performance
+Grades. Extract (ALL/BL7/EDS, all graded schools): `data/subgroup_spg_2024-25.csv`.
+
+- PEAK official history (ALL): 2023-24 D (49, ach 40, growth **Exceeded** 85.8) → 2024-25 **C (57,
+  ach 50, growth Exceeded 87.3)** → 2025-26 D (49.7 computed from ach 43.6 + growth 74; official
+  designation D). The "slide to a D" started from an official C, and both prior years officially
+  Exceeded growth — the two years the review board member cited.
+- PEAK Black subgroup 2024-25: ach 40.7, growth **Exceeded (86.1)**, SPG **50 — D**. EDS subgroup:
+  54 — D, Exceeded (86.2).
+- ACS graded Black subgroups 2024-25: Asheville High D-50 (Met), SILSA D-51 (Met), Claxton F-29
+  (Not Met), Ira B Jones F-26 (Not Met), Asheville Middle F-21 (Not Met). Every graded ACS K-8
+  Black subgroup: F with Not Met growth; Dickson/Hall Fletcher/Herring too few Black test-takers
+  to grade. BCS K-8 graded Black subgroups: 7 schools, scores 25–42, six F. PEAK's 50 is the
+  highest Black-subgroup score of any K-8 school in the county.
+- Statewide Black-subgroup grades (n=1,682 schools): A 25 / B 99 / C 408 / D 797 / F 353 — 68.4%
+  D or F. PEAK's 50 = 52nd percentile of Black-subgroup scores. Only 250 of 1,585 (16%) Black
+  subgroups Exceeded growth; PEAK's did.
+- Locked zone, 2025-26: 409 of 2,086 NC schools with ≥30 test administrations (20%) have composite
+  GLP < 43.75%, so even a perfect growth score cannot produce a C (0.8×ach + 0.2×100 < 55). Of the
+  390 with a growth status, 227 (58%) Met or Exceeded growth. (Approximation: achievement score
+  taken as the GLP composite; ELP/indicator components can shift it slightly.)
