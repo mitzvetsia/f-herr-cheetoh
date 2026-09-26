@@ -29,7 +29,7 @@ Share of tested students, 2025-26 EOG administrations (grades 3-8; PEAK tests 3-
 
 Three things follow directly:
 
-- PEAK's tested population is **3.3x** as Black as ACS's and **10x** as Black as Buncombe's, **twice** as poor, and carries **about double** the IEP share of either district.
+- PEAK's tested population is **3.3x** as Black as ACS's and **10x** as Black as Buncombe's, **twice** as low-income, and carries **about double** the IEP share of either district.
 - PEAK has **zero** AIG-identified test-takers. More than **one in four** ACS test-takers is academically gifted. Every AIG student is a near-automatic "proficient." Comparing PEAK's school-wide average to ACS's school-wide average is comparing a school with none of those students to a district where they're 27% of the denominator.
 - PEAK's IEP share roughly **tripled** between 2023-24 (10.2%) and 2024-25 (31.4%), staying near there in 2025-26 (28.4%). The school got markedly *needier* over exactly the window in which its raw scores are being compared.
 
@@ -137,7 +137,7 @@ Year-over-year GLP, 2024-25 → 2025-26:
 
 ## 9. Suggested spine for the response essay
 
-1. **Name the statistical malpractice:** comparing a 218-test school that is 86% poor, 69% Black, 28% IEP and 0% gifted against districts whose tested rolls are ~60% white and 17-27% gifted — on raw averages, over a single pair of years, at a sample size where the science "trend" is two children.
+1. **Name the statistical malpractice:** comparing a 218-test school that is 86% low-income, 69% Black, 28% IEP and 0% gifted against districts whose tested rolls are ~60% white and 17-27% gifted — on raw averages, over a single pair of years, at a sample size where the science "trend" is two children.
 2. **Aim the same lens back:** ACS's average has always looked respectable while 4 of 5 of its Black students test below grade level — that average is precisely how Asheville hid its gap for a generation, and it's why PEAK exists.
 3. **Bring the two numbers that measure the school, not the intake:** growth Exceeded (2024-25, 22 hurricane days lost) and Met (2025-26, every subgroup), while 10 Buncombe schools failed growth; and cohorts — kids who stayed at PEAK held or gained (G5→G6 reading 39→55, math 39→73), and the "decline" is one incoming class of third-graders who arrived behind. Serving them is the mission, not the scandal.
 4. **Concede honestly, then reframe:** yes, 39% reading proficiency isn't the destination, the new G3 class has a long way to go, and 2025-26 growth was "Met," not "Exceeded." But the districts' rise rode a statewide rebound plus a tested population that got measurably less poor — while the school being attacked posted better results with the county's most underserved students than either district gets with the same students.
@@ -194,10 +194,10 @@ through a doubling of enrollment and the Helene year.
 
 - Black-student absenteeism: PEAK lower than **80%** of the 2,264 NC schools reporting the subgroup.
 - Low-income absenteeism: lower than **88%** of 2,614 schools.
-- Poverty-adjusted (OLS of all-student rate on EDS share, N=2,568 schools ≥50 students; slope ≈ +42
+- Income-adjusted (OLS of all-student rate on EDS share, N=2,568 schools ≥50 students; slope ≈ +42
   points per 100% EDS): a school with PEAK's 88% EDS share is predicted at 39.5%. PEAK is 20.0% —
   **19.5 points better than predicted, a residual in the best 1% of NC schools**.
-- Among the 293 high-poverty schools (EDS ≥75%): median 36.6%; PEAK better than 94% of them.
+- Among the 293 schools with EDS ≥75%: median 36.6%; PEAK better than 94% of them.
 
 ### The equity gap runs the other way at PEAK
 
