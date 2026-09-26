@@ -153,3 +153,60 @@ Year-over-year GLP, 2024-25 → 2025-26:
 - Decomposition: Δoverall = Σ(avg share × Δrate) + Σ(avg rate × Δshare), standard within/mix split; race and income partitions reported separately (both are true simultaneously: the mix shift happened on income, not race).
 - Significance: two-proportion z-tests on GLP counts, PEAK 2024-25 vs 2025-26 (reading z=1.21, p=0.23; math z=0.38, p=0.70; science z=0.67, p=0.50).
 - Sources: [DPI accountability data sets](https://www.dpi.nc.gov/districts-schools/testing-and-school-accountability/school-accountability-and-reporting/accountability-data-sets-and-reports), [disaggregated datasets directory](https://accrpt.tops.ncsu.edu/docs/disag_datasets/), 2024-25 & 2025-26 School Assessment and Other Indicator Data workbooks (EVAAS growth sheets, incl. "Days Missed Due to Hurricane Helene"), [WRAL score lookup](https://www.wral.com/news/education/look-it-up-nc-standardized-testing-results-september-2026/).
+
+## Chronic absenteeism, sliced by Black and low-income students
+
+Source: DPI school report card dataset `rcd_chronic_absent` (SY2425 release). Definition: share of
+students enrolled ≥10 days who missed ≥10% of their enrolled days. `year` = spring of the school year
+(2025 = 2024-25); report cards lag accountability, so 2025-26 is not yet published. Rates `<5`/`>95`
+are masked to 5/95; cells with denominator <10 are suppressed. Full extract:
+`data/chronic_absenteeism_2018-2025.csv`.
+
+### The headline: PEAK's Black and low-income students show up at ~half everyone else's absentee rate
+
+2024-25 chronic absenteeism (count/denominator):
+
+| Group | PEAK | Asheville City | Buncombe County | NC statewide |
+|---|---|---|---|---|
+| Black students | **17.7%** (20/113) | 34.7% (256/738) | 31.2% (514/1648) | 31.4% |
+| Low-income (EDS) | **17.3%** (26/150) | 30.2% (557/1843) | 27.3% (2853/10434) | 33.2% |
+| All students | 20.0% (34/170) | 20.1% (804/4007) | 18.7% (4292/22916) | 24.3% |
+| With disabilities (SWD) | 25.0% (5/20) | 27.7% | 28.7% | 31.2% |
+
+Unlike the test-score cells, these denominators cover the whole school (K up, not just grades 3-8),
+and every headline gap is statistically significant (two-proportion z):
+PEAK vs ACS Black z=−3.59 p=0.0003; vs BCS Black z=−3.02 p=0.0025; vs ACS EDS z=−3.34 p=0.0008;
+vs BCS EDS z=−2.74 p=0.006; vs statewide benchmarks Black p=0.0017, EDS p<0.0001.
+
+### PEAK improved every year it has existed — significantly
+
+| Year | PEAK all | PEAK Black | PEAK EDS |
+|---|---|---|---|
+| 2021-22 | 34.1% (29/85) | 32.1% (18/56) | 36.2% (21/58) |
+| 2022-23 | 24.5% | 26.6% | 28.8% |
+| 2023-24 | 23.3% | 23.5% | 24.8% |
+| 2024-25 | 20.0% | 17.7% | 17.3% |
+
+2021-22 → 2024-25: all p=0.014, Black p=0.034, EDS p=0.0035 — real improvement at school scale,
+through a doubling of enrollment and the Helene year.
+
+### Position among NC schools (2024-25)
+
+- Black-student absenteeism: PEAK lower than **80%** of the 2,264 NC schools reporting the subgroup.
+- Low-income absenteeism: lower than **88%** of 2,614 schools.
+- Poverty-adjusted (OLS of all-student rate on EDS share, N=2,568 schools ≥50 students; slope ≈ +42
+  points per 100% EDS): a school with PEAK's 88% EDS share is predicted at 39.5%. PEAK is 20.0% —
+  **19.5 points better than predicted, a residual in the best 1% of NC schools**.
+- Among the 293 high-poverty schools (EDS ≥75%): median 36.6%; PEAK better than 94% of them.
+
+### The equity gap runs the other way at PEAK
+
+Everywhere else, Black students are chronically absent *more* than the average student:
+ACS +14.6 pts above its own average (Black 34.7 vs all 20.1; Black-white gap +21.4), BCS +12.5,
+state +7.2. At PEAK, Black students are absent *less* than the school average (−2.3 pts). The
+attendance gap that mirrors the districts' achievement gap does not exist at PEAK.
+
+Caveats: EDS denominators change definition between 2022 and 2023 (direct-certification expansion),
+so within-district EDS trends across that seam are unreliable — cross-sectional comparisons are
+clean. 2019-20 is a truncated COVID year and 2020-21 rates are pandemic-inflated everywhere;
+comparisons here start at 2021-22, PEAK's first year of operation.
