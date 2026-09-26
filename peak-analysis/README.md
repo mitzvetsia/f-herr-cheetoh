@@ -210,3 +210,45 @@ Caveats: EDS denominators change definition between 2022 and 2023 (direct-certif
 so within-district EDS trends across that seam are unreliable — cross-sectional comparisons are
 clean. 2019-20 is a truncated COVID year and 2020-21 rates are pandemic-inflated everywhere;
 comparisons here start at 2021-22, PEAK's first year of operation.
+
+## Discipline, sliced the same way
+
+Source: DPI school report card dataset `rcd_inc2` (SY2425 release) — suspensions, expulsions,
+reportable acts, bullying/harassment reports, law-enforcement referrals and school-related arrests,
+**per 1,000 students by subgroup** (events, not unique students; small cells masked, code 3).
+Extract: `data/discipline_rates_2022-2025.csv`.
+
+### 2024-25, per 1,000 students
+
+| Measure | PEAK | Asheville City | Buncombe County | NC statewide |
+|---|---|---|---|---|
+| Short-term suspensions — Black | **37** (4 events / 109 students) | 261 | 335 | 303 |
+| Short-term suspensions — low-income | **53** | 152 | 164 | 210 |
+| In-school suspensions — Black | **0** | 291 | 434 | 284 |
+| Law-enforcement referrals — Black | **0** | 22 | 20 | 10 |
+
+In counts: PEAK issued 8 short-term suspensions school-wide all year (4 to Black students). Across
+its four years of operation (~475 student-years): **zero** expulsions, zero long-term suspensions,
+zero law-enforcement referrals, zero school-related arrests, zero reported criminal acts, zero
+reported bullying/harassment incidents, and one in-school suspension (2022-23). At ACS's
+Black-student suspension rate, PEAK's 109 Black students would be expected to draw ~28 short-term
+suspensions; there were 4 (at Buncombe's rate ~36, statewide ~33).
+
+### The racial discipline gap inverts at PEAK
+
+ACS suspends its Black students at **10.8×** its white rate (261 vs 24 per 1,000); Buncombe at 3.6×;
+the state at 3.8×. At PEAK, Black students are suspended *below* the school-wide average (37 vs 51).
+
+### Grade-span check (PEAK is K-7; districts include high schools)
+
+Against ACS's own elementary and middle schools, Black students, 2024-25 STS per 1,000:
+Ira B Jones 0 · SILSA 16 · Lucy Herring 121 (ISS 303) · Hall Fletcher 184 (**police referrals 13**)
+· Claxton 226 · Isaac Dickson 387 · Asheville Middle 566 (ISS 1,110, referrals 34). PEAK's 37 beats
+every ACS school but Ira B Jones. Buncombe's middle schools run 267–951 STS per 1,000 Black
+students (Erwin Middle: 1,675 ISS per 1,000 — more than 1.6 in-school suspensions per Black
+student per year).
+
+Caveats: rates are events per 1,000 (one student can account for several); PEAK's cells are small
+(~9 per 1,000 per event on its Black enrollment), so treat single-year PEAK rates as counts — the
+four-year run of zeros is the robust fact; several small BCS elementary cells are suppressed;
+2020-21 pandemic year excluded from comparisons.
